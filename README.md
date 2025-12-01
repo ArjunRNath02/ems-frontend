@@ -36,12 +36,17 @@ This frontend consumes the EMS backend APIs to provide a responsive and interact
 ems-frontend/
 │── public/
 │── src/
+│     ├── assets/           # assets (images)
 │     ├── components/       # Reusable UI components
+│     ├── constants/        
+│     ├── hooks/            # Reusable functional components
 │     ├── pages/            # Pages (Dashboard, Employees, Departments, Attendance)
 │     ├── services/         # API service files
-│     ├── context/          # Global state management
-│     ├── utils/            # Helper functions
-│     └── App.jsx / App.tsx
+│     ├── types/            # Entity types
+│     ├── libs/             # Helper functions
+│     ├── App.tsx
+│     ├── index.css
+│     └── main.tsx
 │
 ├── package.json
 └── README.md
