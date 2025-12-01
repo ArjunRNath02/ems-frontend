@@ -27,7 +27,6 @@ This frontend consumes the EMS backend APIs to provide a responsive and interact
 - **HTTP Requests:** Axios  
 - **Routing:** React Router  
 - **Build Tools:** Vite  
-- **Testing:** Jest / React Testing Library (if implemented)  
 
 ---
 
