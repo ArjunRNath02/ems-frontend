@@ -1,73 +1,120 @@
-# React + TypeScript + Vite
+# 📌 Employee Management System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18-green)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-Currently, two official plugins are available:
+A **React-based frontend application** for managing employees, departments, and attendance.  
+This frontend consumes the EMS backend APIs to provide a responsive and interactive UI for administrators.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Employee Management**: View, add, edit, and delete employees  
+- **Department Management**: View departments, add or update departments  
+- **Attendance Dashboard**: Mark attendance, track present/absent employees  
+- **Responsive UI**: Works on desktop, tablet, and mobile devices  
+- **Dashboard Metrics**: Total employees, present, absent, and department-wise stats
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React 18+  
+- **State Management:** Context API  
+- **UI Library:** Tailwind CSS + ShadCN UI  
+- **HTTP Requests:** Axios  
+- **Routing:** React Router  
+- **Build Tools:** Vite  
+- **Testing:** Jest / React Testing Library (if implemented)  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
+
+```
+ems-frontend/
+│── public/
+│── src/
+│     ├── components/       # Reusable UI components
+│     ├── pages/            # Pages (Dashboard, Employees, Departments, Attendance)
+│     ├── services/         # API service files
+│     ├── context/          # Global state management
+│     ├── utils/            # Helper functions
+│     └── App.jsx / App.tsx
+│
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Setup & Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-repo/ems-frontend.git
+cd ems-frontend
 ```
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3️⃣ Configure Environment Variables
+Create a `.env` file in the root:
+
+```env
+REACT_APP_API_URL=http://localhost:8080
+```
+
+### 4️⃣ Start Development Server
+```bash
+npm start
+# or
+yarn start
+```
+
+Access the app at: `http://localhost:3000`
+
+---
+
+## 📚 API Integration
+
+- **Employees:** `GET /api/employees`, `POST /api/employees`, `PUT /api/employees/{id}`, `DELETE /api/employees/{id}`  
+- **Departments:** `GET /api/departments`, `POST /api/departments`  
+- **Attendance:** `POST /api/attendance`, `GET /api/attendance/{employeeId}`  
+
+All API calls handled via **Axios** in `src/services`.
+
+---
+
+## 🧪 Testing
+
+- **Unit Tests:** Jest / React Testing Library  
+- **Manual Testing:** Browser + Developer Tools  
+- **API Testing:** Ensure backend is running  
+
+---
+
+## 🎨 Screenshots (Optional)
+
+> Add screenshots of dashboard, employee list, attendance, etc.
+
+---
+
+## 👤 Author
+
+**Arjun R Nath**  
+Junior Software Engineer Trainee – Armia Systems Pvt Ltd  
+React | JavaScript | Full-Stack Development
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
