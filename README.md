@@ -111,7 +111,7 @@ All API calls handled via **Axios** in `src/services`.
 ![Employees Screenshot](./screenshots/Employees.png)
 ![Add Employee Screenshot](./screenshots/AddEmployee.png)
 ![Departments Screenshot](./screenshots/Departments.png)
-![Edit Departments Screenshot](./screenshots/Edit_Department.png)
+![Edit Departments Screenshot](./screenshots/EditDepartment.png)
 ![Attendance Screenshot](./screenshots/Attendance.png)
 
 ---
