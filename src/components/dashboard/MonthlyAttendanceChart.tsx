@@ -52,7 +52,7 @@ export default function MonthlyAttendanceChart({ data }: { data: any[] }) {
                             dataKey="value"
                             cornerRadius={10}
                         >
-                            {data.map((item, index) => (
+                            {data.map((_item, index) => (
                                 <Cell
                                     key={index}
                                     fill={index === 0 ? "url(#presentPie)" : "url(#absentPie)"}
