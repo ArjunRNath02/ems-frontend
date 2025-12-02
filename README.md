@@ -107,7 +107,12 @@ All API calls handled via **Axios** in `src/services`.
 
 ## 🎨 Screenshots (Optional)
 
-> Add screenshots of dashboard, employee list, attendance, etc.
+![Dashboard Screenshot](./screenshots/Dashboard.png)
+![Employees Screenshot](./screenshots/Employees.png)
+![Add Employee Screenshot](./screenshots/AddEmployee.png)
+![Departments Screenshot](./screenshots/Departments.png)
+![Edit Departments Screenshot](./screenshots/EditDepartment.png)
+![Attendance Screenshot](./screenshots/Attendance.png)
 
 ---
 
