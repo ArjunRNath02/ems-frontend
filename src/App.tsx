@@ -15,14 +15,13 @@ export default function App() {
     <Router>
       <div className="bg-gray-50 min-h-screen">
 
-        {/* Sidebar */}
         <Sidebar open={open} setOpen={setOpen} />
 
-        {/* Main Content area */}
         <div
-          className={`transition-all duration-300 ml-[${open ? "260px" : "95px"
-            }]`}
+          className="transition-all duration-300"
+          style={{ marginLeft: open ? 260 : 95 }}
         >
+
           <Topbar />
 
           <main className="p-6">
