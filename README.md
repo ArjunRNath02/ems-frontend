@@ -107,7 +107,7 @@ All API calls handled via **Axios** in `src/services`.
 
 ## 🎨 Screenshots (Optional)
 
-![Dashboard Screenshot](./screenshots/Dashboard.mp4)
+![Dashboard Screenshot](./screenshots/Dashboard.gif)
 ![Employees Screenshot](./screenshots/Employees.png)
 ![Add Employee Screenshot](./screenshots/AddEmployee.png)
 ![Departments Screenshot](./screenshots/Departments.png)
