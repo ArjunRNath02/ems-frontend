@@ -15,6 +15,8 @@ export const AttendanceService = {
     },
 
     getAttendanceByEmployee: async (employeeId: number) => {
+        if (employeeId == null) return [];
+
         const res = await API.get(`/attendance/employee/${employeeId}`);
         return res.data;
     },

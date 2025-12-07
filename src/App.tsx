@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "@/components/layout/Sidebar";
 import Topbar from "@/components/layout/Topbar";
 
@@ -26,10 +26,12 @@ export default function App() {
 
           <main className="p-6">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/employees" element={<Employees />} />
-              <Route path="/departments" element={<Departments />} />
-              <Route path="/attendance" element={<Attendance />} />
+              <Route path="/" element={<Navigate to="/ems-frontend/" replace />} />
+
+              <Route path="/ems-frontend/" element={<Dashboard />} />
+              <Route path="/ems-frontend/employees" element={<Employees />} />
+              <Route path="/ems-frontend/departments" element={<Departments />} />
+              <Route path="/ems-frontend/attendance" element={<Attendance />} />
             </Routes>
           </main>
         </div>

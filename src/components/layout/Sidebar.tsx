@@ -14,10 +14,10 @@ import { images } from "@/constants/images";
 
 export default function Sidebar({ open, setOpen }: any) {
     const menu = [
-        { name: "Dashboard", icon: LayoutDashboard, path: "/" },
-        { name: "Employees", icon: Users, path: "/employees" },
-        { name: "Departments", icon: Building2, path: "/departments" },
-        { name: "Attendance", icon: CalendarCheck, path: "/attendance" },
+        { name: "Dashboard", icon: LayoutDashboard, path: "/ems-frontend/" },
+        { name: "Employees", icon: Users, path: "/ems-frontend/employees" },
+        { name: "Departments", icon: Building2, path: "/ems-frontend/departments" },
+        { name: "Attendance", icon: CalendarCheck, path: "/ems-frontend/attendance" },
     ];
 
     return (
@@ -53,10 +53,11 @@ export default function Sidebar({ open, setOpen }: any) {
                         <NavLink
                             key={item.path}
                             to={item.path}
+                            end={item.path === "/ems-frontend/"}
                             className={({ isActive }) =>
                                 `flex items-center gap-4 px-4 py-3 rounded-lg mx-2
-                                text-gray-700 hover:bg-gray-100 transition
-                                ${isActive ? "bg-gray-200 font-semibold" : ""}`
+           text-gray-700 hover:bg-gray-100 transition
+           ${isActive ? "bg-gray-200 font-semibold" : ""}`
                             }
                         >
                             <div className="flex items-center justify-center w-10 h-10">
@@ -76,6 +77,7 @@ export default function Sidebar({ open, setOpen }: any) {
                     );
                 })}
             </nav>
+
         </motion.aside>
     );
 }

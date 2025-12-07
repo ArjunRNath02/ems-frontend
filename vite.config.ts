@@ -6,10 +6,10 @@ import { defineConfig } from "vite"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/ems-frontend/',
+  base: "/ems-frontend/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-})
+  }
+});
